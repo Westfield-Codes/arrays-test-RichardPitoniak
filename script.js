@@ -30,7 +30,11 @@ function main() {
  * @param: list of items, separated by commas
  * @return: itemsArray
  */
-
+function makeList(items){
+   let itemsArray = [items.split(",")]
+   console.log(itemsArray.toString())
+   return itemsArray
+}
 
 /* 2. Function addPrices(shoppingList)
  * Create a 1D priceList array by SPLITTING a string called prices
@@ -45,7 +49,16 @@ function main() {
  * @param: shoppingList, prices
  * @return: pricesArray
  */
-
+function addPrices(shoppingList,prices){
+  let priceList = [prices.split(",")]
+  let pricesArray = []
+  for (let i = 0; i < shoppingList.length; i++){
+   let itemPrice = []
+   itemPrice = shoppingList.push()
+  }
+  console.log(pricesArray)
+  return pricesArray
+}
 
 
 /* 3. Function calculateTotal(pricesArray)
@@ -61,4 +74,6 @@ function main() {
  * @param = pricesArray
  * @return = message
  */ 
-
+function calculateTotal(pricesArray){
+   return "test"
+}
