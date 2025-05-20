@@ -42,7 +42,7 @@ function makeList(items){
  * Use a FOR LOOP based on the length of shoppingList[] 
  * Inside the loop, create an itemPrice subarray (create it inside the loop because you want it empty)
  * Push the shoppingList item into that itemPrice subarray
- * Push the priceList item with the same index into that itemPrice subArray
+ * Push the pricesArray item with the same index into that itemPrice subArray
  * Push the itemPrice subarray into the pricesArray 
  * You might want to console.log the pricesArray after the loop before you return it.
  * Total lines in my code: 12
@@ -53,10 +53,10 @@ function addPrices(shoppingList,prices){
   let priceList = [prices.split(",")]
   let pricesArray = []
   for (let i = 0; i < shoppingList.length; i++){
-   let itemPrice = []
-   itemPrice = shoppingList.push()
+   let itemPrice = [];
+   itemPrice = shoppingList.push([i][0])
   }
-  console.log(pricesArray)
+  console.log(itemPrice)
   return pricesArray
 }
 
