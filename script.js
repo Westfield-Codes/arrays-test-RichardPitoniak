@@ -54,9 +54,11 @@ function addPrices(shoppingList,prices){
   let pricesArray = []
   for (let i = 0; i < shoppingList.length; i++){
    let itemPrice = [];
-   itemPrice = shoppingList.push([i][0])
+   itemPrice.push(shoppingList[i])
+   itemPrice.push(priceList[i])
+   pricesArray.push(itemPrice)
   }
-  console.log(itemPrice)
+  console.log(pricesArray.toString())
   return pricesArray
 }
 
@@ -75,5 +77,9 @@ function addPrices(shoppingList,prices){
  * @return = message
  */ 
 function calculateTotal(pricesArray){
-   return "test"
+   let total = 0
+   let message = alert("Items to buy:" + "\n")
+   for (let i = 0; i < pricesArray.length; i++){
+
+   }
 }
