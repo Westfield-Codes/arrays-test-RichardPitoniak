@@ -80,6 +80,6 @@ function calculateTotal(pricesArray){
    let total = 0
    let message = alert("Items to buy:" + "\n")
    for (let i = 0; i < pricesArray.length; i++){
-
+     
    }
 }
